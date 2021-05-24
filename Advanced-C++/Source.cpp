@@ -2,7 +2,7 @@
 Pierce Rogg
 CIS 247C
 Course Project
-5/9/2021
+5/24/2021
 */
 
 // Required Libraries
@@ -10,24 +10,30 @@ Course Project
 #include <string>
 #include <iomanip>
 #include <fstream>
+#include "Car.h"
 using namespace std;
 
 // Prototypes
-void saveToFile(string* ptrName);
+void saveToFile(Car* ptrCar);
 
 /// Entry point to the application
 int main()
 {
-	// Variables & Pointers
-	string name = "Pierce Rogg";
-	string* ptrName = &name;
+	// Create Car Objects
+	Car firstCar;
+	Car secondCar("X2345678901234567", "Ford", "Mustang", 2010, 8500.0, 2, false);
 
 	// Check the size
-	cout << "Size of string variable: " << sizeof(name) << endl;
-	cout << "Size of pointer variable: " << sizeof(ptrName) << endl;
+	cout << "Size of Car object: " << sizeof(firstCar) << endl;
+	cout << "Size of pointer to Car object: " << sizeof(&firstCar) << endl;
+	cout << endl;
+
+	// Delete File if it Exists
+	remove("data.txt");
 
 	// Save to file
-	saveToFile(ptrName);
+	saveToFile(&firstCar);
+	saveToFile(&secondCar);
 
 	// Pause
 	cout << endl;
@@ -36,19 +42,25 @@ int main()
 	return 0;
 }
 
-void saveToFile(string* ptrName)
+void saveToFile(Car* ptrCar)
 {
 	ofstream outToFile("data.txt");
 
 	// If File is open write to it
 	if (outToFile.is_open())
 	{
-		outToFile << *ptrName << endl;
+		outToFile << ptrCar->getVin() << endl;
+		outToFile << ptrCar->getMake() << endl;
+		outToFile << ptrCar->getModel() << endl;
+		outToFile << ptrCar->getYear() << endl;
+		outToFile << ptrCar->getPrice() << endl;
+		outToFile << ptrCar->getNumDoors() << endl;
+		outToFile << ptrCar->getHatchback() << endl;
 
 		// Close File
 		outToFile.close();
 
 		// Confirmation Message
-		cout << "\nData was written to the file!" << endl;
+		cout << ptrCar->getMake() << " " << ptrCar->getModel() << " was written to the file!" << endl;
 	}
 }
