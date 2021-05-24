@@ -43,3 +43,12 @@
 *.ilk
 *.suo
 *.ipch
+*.recipe
+*.log
+*.idb
+*.txt
+*.tlog
+*.json
+*.opendb
+*.db-wal
+*.db-shm
