@@ -2,7 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Advanced-C++
 /.vs/Personal-Projects/v16
 /.vs/ProjectSettings.json
 /.vs/slnx.sqlite
