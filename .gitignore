@@ -2,17 +2,44 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Personal-Projects/v16
-/.vs/ProjectSettings.json
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json
-/Advanced-C++/.vs/Advanced-C++/v16
-/Advanced-C++/Debug/Advanced-C++.Build.CppClean.log
-/Advanced-C++/Debug/Advanced-C++.exe
-/Advanced-C++/Advanced-C++.vcxproj.user
-/Advanced-C++/Advanced-C++.vcxproj.filters
-/Advanced-C++/Advanced-C++.vcxproj
-/Advanced-C++/Debug/Advanced-C++.tlog
-/Advanced-C++/Debug/Advanced-C++.exe.recipe
-/Advanced-C++/Debug/Advanced-C++.ilk
-/Advanced-C++/Debug
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.pdb
+*.ilk
+*.suo
+*.ipch
