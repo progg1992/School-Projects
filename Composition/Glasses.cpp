@@ -20,7 +20,7 @@ Glasses::~Glasses(void)
 string Glasses::toString(void)
 {
 	string strPrescription = to_string(prescription);
-	return "Color: " + color + " Prescription: " + strPrescription;
+	return "Color: " + color + ", Prescription: " + strPrescription;
 }
 
 // Accessors and Mutators
