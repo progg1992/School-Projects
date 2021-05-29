@@ -22,7 +22,7 @@ public:
 	// Behaviors
 	string toString(void);
 	string writeToFile(void);
-	string readToFile(void);
+	string readFromFile(void);
 
 	// Accessors and Mutators
 	string getName(void);

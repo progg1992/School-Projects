@@ -41,7 +41,7 @@ string Person::writeToFile(void)
 	return name + "'s data was written to the file";
 }
 
-string Person::readToFile(void)
+string Person::readFromFile(void)
 {
 	string filename = name + ".txt";
 	ifstream iFile(filename);
@@ -61,7 +61,7 @@ string Person::readToFile(void)
 		iFile.ignore(1);
 		iFile.close();
 
-		return name + "'s has been read from " + filename;
+		return name + "'s data has been read from " + filename;
 	}
 }
 

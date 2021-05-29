@@ -20,6 +20,7 @@ Glasses::~Glasses(void)
 string Glasses::toString(void)
 {
 	string strPrescription = to_string(prescription);
+	strPrescription = strPrescription.substr(0, 4);
 	return "Color: " + color + ", Prescription: " + strPrescription;
 }
 
