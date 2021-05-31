@@ -11,7 +11,7 @@ Car::Car()
 	hatchback = false;
 }
 
-Car::Car(string vin, string make, string model, short year, double price, short numDoors, bool hatchback)
+Car::Car(string vin, string make, string model, short year, double price, short numDoors, bool hatchback, Engine motor)
 {
 	setVin(vin);
 	setMake(make);
@@ -20,6 +20,7 @@ Car::Car(string vin, string make, string model, short year, double price, short 
 	setPrice(price);
 	setNumDoors(numDoors);
 	setHatchback(hatchback);
+	setMotor(motor);
 }
 
 Car::~Car()
@@ -28,7 +29,7 @@ Car::~Car()
 
 string Car::toString()
 {
-	return "Vin: " + vin + ", make: " + make + ", model: " + model + ", year: " + to_string(year) + ", price: " + to_string(price) + ", numDoors: " + to_string(numDoors) + ", hatchback: " + to_string(hatchback);
+	return "Vin: " + vin + ", make: " + make + ", model: " + model + ", year: " + to_string(year) + ", price: " + to_string(price) + ", numDoors: " + to_string(numDoors) + ", hatchback: " + to_string(hatchback) + ", numCylinders: " + to_string(motor.getHorsePower()) + ", horsePower: " + to_string(motor.getHorsePower());
 }
 
 double Car::discountPrice(float discountPercent)
@@ -123,4 +124,14 @@ bool Car::getHatchback()
 void Car::setHatchback(bool isHatchback)
 {
 	this->hatchback = isHatchback;
+}
+
+Engine Car::getMotor()
+{
+	return motor;
+}
+
+void Car::setMotor(Engine motor)
+{
+	this->motor = motor;
 }

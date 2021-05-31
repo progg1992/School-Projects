@@ -2,6 +2,7 @@
 
 #include <string>
 using namespace std;
+#include "Engine.h"
 
 class Car
 {
@@ -14,11 +15,12 @@ private:
 	double price;
 	short numDoors;
 	bool hatchback;
+	Engine motor;
 
 public:
 	// Constructor and Destructor
 	Car();
-	Car(string vin, string make, string model, short year, double price, short numDoors, bool hatchback);
+	Car(string vin, string make, string model, short year, double price, short numDoors, bool hatchback, Engine motor);
 	~Car();
 
 	// Behaviors
@@ -46,5 +48,8 @@ public:
 
 	bool getHatchback();
 	void setHatchback(bool isHatchback);
+
+	Engine getMotor();
+	void setMotor(Engine motor);
 };
 
