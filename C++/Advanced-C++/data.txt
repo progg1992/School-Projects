@@ -1,3 +1,12 @@
+Unknown
+Unknown
+Unknown
+0
+0
+0
+0
+0
+0
 X2345678901234567
 Ford
 Mustang
@@ -5,3 +14,5 @@ Mustang
 8500
 2
 0
+10
+425
