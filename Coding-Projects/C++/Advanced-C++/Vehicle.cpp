@@ -90,5 +90,5 @@ Engine Vehicle::getMotor() {
 }
 
 void Vehicle::setMotor(Engine motor) {
-	this->motor = motor
+	this->motor = motor;
 }
