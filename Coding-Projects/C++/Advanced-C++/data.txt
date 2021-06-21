@@ -1,18 +1,8 @@
-Unknown
-Unknown
-Unknown
-0
-0
-0
-0
-0
-0
-X2345678901234567
-Ford
-Mustang
-2010
-8500
-2
-0
-10
-425
+Car,Unknown,Ford,Mustang,2010,8500,8,315
+,2,0
+SUV,Unknown,Honda,Pilot,2015,15000,6,250
+,8,47.7
+GasCar,Unknown,Chevy,Corvette,2007,16000,8,400
+,18,19
+ElectricCar,Unknown,Tesla,Model 3,2018,40000,0,271
+,75,240,136

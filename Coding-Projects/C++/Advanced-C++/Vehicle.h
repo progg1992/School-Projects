@@ -19,7 +19,7 @@ public:
 	// Constructor and Destructor
 	Vehicle();
 	Vehicle(string vin, string make, string model, short year, double price, Engine motor);
-	virtual~Vehicle();
+	virtual~Vehicle() = 0;
 
 	// Behaviors
 	virtual string toString();
